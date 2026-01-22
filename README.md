@@ -1,4 +1,4 @@
-![taitaja2025 Keuda](taitaja2026.png)
+![taitaja2025 Keuda](/img/taitaja2026.png)
 
 # Taitaja 2026 Web-kehitys kilpailutehtävät
 
