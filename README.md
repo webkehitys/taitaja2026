@@ -4,9 +4,11 @@
 
 ## Ohjeet Semifinaalia varten
 
-- Tekniset ohjeet ovat tulossa
+Tekniset ohjeet järjestelmän käytöstä sekä ohjeistus tekoälyn käytön merkitsemisestä ovat omissa kansioissaan:
 
-- [Ohjeet tekoälyn käytön merkitsemiseen](Semifinaali_ohjeet/AI/readme.md)
+- [suomeksi](Semifinaali_ohjeet/suomeksi/)
+- [på svenska](Semifinaali_ohjeet/svenska/)
+- [in English](Semifinaali_ohjeet/english/)
 
 ## Semifinaali
 
