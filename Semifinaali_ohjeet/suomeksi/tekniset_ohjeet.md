@@ -43,8 +43,8 @@
 >
 > Esimerkiksi alias **`skdjf`** näkyy näin:
 >
-> - Frontend: https://skdjf-frontend.taitaja.webkehitys.fi
-> - Backend: https://skdjf-backend.taitaja.webkehitys.fi
+> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
+> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/
 
 ---
 
@@ -107,7 +107,7 @@ comp02_backend
 - Jokainen **push** julkaisee automaattisesti kilpailu-URL-osoitteeseen:
 
   ```
-  https://<aliverkko>-<moduulinimi>.taitaja.webkehitys.fi
+  https://<aliverkko>-<moduulinimi>.taitaja2026.nstrim.app/
   ```
 
 - Koska jokainen Git push käynnistää deploy-prosessin, joka vie aikaa ja kuluttaa resursseja, suosittelemme kokoamaan muutokset ja tekemään pushit harvemmin.
@@ -120,5 +120,5 @@ comp02_backend
 >
 > Esimerkiksi alias **`skdjf`** näkyy näin:
 >
-> - Frontend: https://skdjf-frontend.taitaja.webkehitys.fi
-> - Backend: https://skdjf-backend.taitaja.webkehitys.fi
+> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
+> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/
