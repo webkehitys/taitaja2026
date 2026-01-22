@@ -8,13 +8,14 @@ Tunnukset toimitetaan tänään tiedoksi myös kilpailijoiden huoltajille.
 
 Seuraavat teknologiat ovat tällä hetkellä tuettuja. Jos listasta puuttuu jokin, jota haluatte käyttää, ottakaa yhteys semifinaalivastaavaan ja selvitämme onko sen lisääminen mahdollista.
 
-**Frontend:** HTML, CSS, JavaScript tai React / Vue / Angular / Next
+**Frontend:** HTML, CSS, JavaScript tai React / Vue / Angular / Next (ml. TypeScript) / Svelte
 
 **Backend:** PHP (natiivi tai Laravel) tai Node.js (natiivi tai Express.js)
 
 **Tietokanta:** MySQL
 
 Valmiiden UI-komponenttikirjastojen käyttö **ei ole sallittua.**
+**Python ei ole vaihtoehto** backendin puolella.
 
 **Tekoälyn käyttö** on sallittua ja siitä on ilmoitettava erillisen [ohjeen](ai-suomi.pdf) mukaisesti.
 

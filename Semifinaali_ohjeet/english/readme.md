@@ -8,13 +8,14 @@ The credentials will also be sent today to the competitors’ guardians for thei
 
 The following technologies are currently supported. If the list does not include a technology you wish to use, please contact the semifinal coordinator so we can determine whether it can be added.
 
-**Frontend:** HTML, CSS, JavaScript, or React / Vue / Angular / Next
+**Frontend:** HTML, CSS, JavaScript, or React / Vue / Angular / Next (inc. TypeScript) / Svelte
 
 **Backend:** PHP (native or Laravel) or Node.js (native or Express.js)
 
 **Database:** MySQL
 
 The use of pre-built UI component libraries **is not permitted.**
+**Python is not an option** for backend.
 
 The use of **artificial intelligence** is allowed and must be declared in accordance with the [instructions](ai-en.pdf).
 

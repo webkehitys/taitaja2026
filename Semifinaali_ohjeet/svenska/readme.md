@@ -8,13 +8,14 @@ Inloggningsuppgifterna skickas även idag till de tävlandes vårdnadshavare fö
 
 Följande teknologier stöds för närvarande. Om listan saknar någon teknik som ni vill använda, vänligen kontakta semifinalansvarig så utreder vi om det är möjligt att lägga till den.
 
-**Frontend:** HTML, CSS, JavaScript eller React / Vue / Angular / Next
+**Frontend:** HTML, CSS, JavaScript eller React / Vue / Angular / Next (inkl. TypeScript) / Svelte
 
 **Backend:** PHP (native eller Laravel) eller Node.js (native eller Express.js)
 
 **Databas:** MySQL
 
 Användning av färdiga UI-komponentbibliotek **är inte tillåten.**
+**Python är inte tillåtet** på backend-sidan.
 
 Användning av **artificiell intelligens** är tillåten och ska redovisas enligt separata [instruktioner](ai-swe.pdf).
 
