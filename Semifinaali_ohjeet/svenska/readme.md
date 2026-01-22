@@ -20,4 +20,4 @@ Användning av **artificiell intelligens** är tillåten och ska redovisas enlig
 
 Dessa instruktioner gäller under tävlingen. Om du har frågor om instruktionerna, vänligen kontakta semifinalansvarig redan före tävlingens början: laura.jarvinen(at)bc.fi
 
-Dessa instruktioner har översatts med hjälp av artificiell intelligens. Om texten innehåller oklarheter eller fel, ber vi dig meddela även dessa. Själva tävlingsuppgiften är översatt av en professionell översättare.
+**Dessa instruktioner har översatts med hjälp av artificiell intelligens. Om texten innehåller oklarheter eller fel, ber vi dig meddela även dessa. Själva tävlingsuppgiften är översatt av en professionell översättare.**
