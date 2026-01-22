@@ -14,7 +14,7 @@ Seuraavat teknologiat ovat tällä hetkellä tuettuja. Jos listasta puuttuu joki
 
 Valmiiden UI-komponenttikirjastojen käyttö **ei ole sallittua.**
 
-**Tekoälyn käyttö** on sallittua ja siitä on ilmoitettava erillisen [ohjeen](AI/readme.md) mukaisesti.
+**Tekoälyn käyttö** on sallittua ja siitä on ilmoitettava erillisen [ohjeen](ai-suomi.pdf) mukaisesti.
 
 ### Kysymyksiä tai kommentteja ohjeista?
 
