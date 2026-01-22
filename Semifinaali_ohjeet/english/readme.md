@@ -12,6 +12,8 @@ The following technologies are currently supported. If the list does not include
 
 **Backend:** PHP (native or Laravel) or Node.js (native or Express.js)
 
+**Database:** MySQL
+
 The use of pre-built UI component libraries **is not permitted.**
 
 The use of **artificial intelligence** is allowed and must be declared in accordance with the [instructions](ai-en.pdf).

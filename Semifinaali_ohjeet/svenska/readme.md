@@ -12,6 +12,8 @@ Följande teknologier stöds för närvarande. Om listan saknar någon teknik so
 
 **Backend:** PHP (native eller Laravel) eller Node.js (native eller Express.js)
 
+**Databas:** MySQL
+
 Användning av färdiga UI-komponentbibliotek **är inte tillåten.**
 
 Användning av **artificiell intelligens** är tillåten och ska redovisas enligt separata [instruktioner](ai-swe.pdf).

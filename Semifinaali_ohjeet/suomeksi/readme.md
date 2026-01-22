@@ -12,6 +12,8 @@ Seuraavat teknologiat ovat tällä hetkellä tuettuja. Jos listasta puuttuu joki
 
 **Backend:** PHP (natiivi tai Laravel) tai Node.js (natiivi tai Express.js)
 
+**Tietokanta:** MySQL
+
 Valmiiden UI-komponenttikirjastojen käyttö **ei ole sallittua.**
 
 **Tekoälyn käyttö** on sallittua ja siitä on ilmoitettava erillisen [ohjeen](ai-suomi.pdf) mukaisesti.
