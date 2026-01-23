@@ -22,3 +22,5 @@ The use of **artificial intelligence** is allowed and must be declared in accord
 ### Questions or comments regarding the instructions?
 
 These instructions are in effect during the competition. If you have any questions regarding the instructions, please contact the semifinal coordinator before the competition begins: laura.jarvinen(at)bc.fi
+
+Issues? Check the listing of known issues, fixes and updates at [the front page](/README.md).

@@ -22,3 +22,5 @@ Valmiiden UI-komponenttikirjastojen käyttö **ei ole sallittua.**
 ### Kysymyksiä tai kommentteja ohjeista?
 
 Nämä ohjeet ovat käytössä kilpailun aikana. Jos ohjeista on kysyttävää, otathan yhteyttä jo ennen kilpailun alkua semifinaalivastaavaan: laura.jarvinen(at)bc.fi
+
+Ongelmia? Katso lista tunnetuista ongelmista, muutoksista ja päivityksistä [etusivulta](/README.md).
