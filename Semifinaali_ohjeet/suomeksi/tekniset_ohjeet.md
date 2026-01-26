@@ -41,7 +41,7 @@ Jos dokumentaation ohjeistus on ristiriidassa tässä alla olevien ohjeiden kans
 - Tarkista muutokset URL-osoitteessa:
 
   ```
-  https://<aliverkko>-<moduulinimi>.taitaja.webkehitys.fi
+  https://<aliverkko>-<moduulinimi>.taitaja2026.nstrim.app/fi
   ```
 
 > Jokaisella kilpailijalle on annettu käyttäjätunnus, salasana ja alias.
@@ -89,7 +89,7 @@ Jos dokumentaation ohjeistus on ristiriidassa tässä alla olevien ohjeiden kans
 - Käytä alla olevaa host-asetusta yhdistääksesi tietokantaan:
 
   ```php
-  define('DB_HOST', 'db.taitaja.webkehitys.fi');
+  define('DB_HOST', 'db.taitaja2026.nstrim.app/');
   ```
 
 Jokaisella käyttäjällä on ennalta määrätyt tietokannat:
@@ -110,21 +110,13 @@ comp02_backend
 
 ## 4. Automaatio ja julkaisu
 
-- Jokainen **push** julkaisee automaattisesti kilpailu-URL-osoitteeseen:
+- Jokainen **push** julkaisee automaattisesti kilpailun URL-osoitteeseen, jonka löydät tunnistetiedoistasi kohdan “Module URLs” alta.
 
-  ```
-  https://<aliverkko>-<moduulinimi>.taitaja2026.nstrim.app/
-  ```
+- **Valitse oikea repositorio** Repositorion mappaus on tärkeää! Ilman sitä työsi ei deployaudu automaattisesti. Voit tehdä tämän kilpailijan hallintapaneelissa.
+  ![Repository mapping](/img/select_repo.png)
 
-- Koska jokainen Git push käynnistää deploy-prosessin, joka vie aikaa ja kuluttaa resursseja, suosittelemme kokoamaan muutokset ja tekemään pushit harvemmin.
-- Tarkista muutokset kilpailu-URL-osoitteessa jokaisen pushin jälkeen.
+- Valitse repositorio Gitea-tilisi repositoriolistasta. Paina sitten tallenna, jolloin uusi mappaus luodaan ja deployment asetetaan taustalla.
 
----
+- Koska jokainen Git-push käynnistää deploy-prosessin, joka vie aikaa ja käyttää resursseja, suosittelemme ryhmittelemään muutokset ja pushaamaan harvemmin.
 
-> Jokaisella kilpailijalle on annettu käyttäjätunnus, salasana ja alias.
-> Alias muodostaa aliverkon osoitteen, jota käytetään kilpailuympäristössä.
->
-> Esimerkiksi alias **`skdjf`** näkyy näin:
->
-> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
-> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/
+- Tarkista muutoksesi kilpailun URL-osoitteessa jokaisen pushin jälkeen.

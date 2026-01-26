@@ -41,7 +41,7 @@ If the instructions in the documentation conflict with the instructions below, t
 - Check your changes at the URL:
 
   ```
-  https://<subdomain>-<module_name>.taitaja.webkehitys.fi
+  https://<subdomain>-<module_name>.taitaja2026.nstrim.app/
   ```
 
 > Each competitor is assigned a username, password, and alias.
@@ -89,7 +89,7 @@ If the instructions in the documentation conflict with the instructions below, t
 - Use the following host setting to connect to the database:
 
   ```php
-  define('DB_HOST', 'db.taitaja.webkehitys.fi');
+  define('DB_HOST', 'db.taitaja2026.nstrim.app/');
   ```
 
 Each user has predefined databases:
@@ -110,21 +110,15 @@ comp02_backend
 
 ## 4. Automation and Deployment
 
-- Each **push** automatically deploys to the competition URL:
+- Each **push** automatically deploys to the competition URL which you can see on your credentials document under "Module URLs"
 
-  ```
-  https://<subdomain>-<module_name>.taitaja2026.nstrim.app/
-  ```
+- **Select the right repository**
+  Repository mapping is important! Without it, your work will not be automatically deployed.
+  You can do this in your competitor dashboard.
+  ![Repository mapping](/img/select_repo.png)
+
+- Select the repository from the list of repositories in your Gitea account. Then press save and you will see a new mapping created and in the background the deployment is setup.
 
 - Since each Git push triggers a deployment process that takes time and uses resources, we recommend grouping changes and pushing them less frequently.
+
 - Check your changes at the competition URL after each push.
-
----
-
-> Each student is assigned a username, password, and alias.
-> The alias forms the subdomain address used in the competition environment.
->
-> For example, alias **`skdjf`** appears as:
->
-> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
-> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/

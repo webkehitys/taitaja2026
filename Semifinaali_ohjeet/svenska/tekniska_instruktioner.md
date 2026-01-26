@@ -41,7 +41,7 @@ Om anvisningarna i dokumentationen står i konflikt med instruktionerna nedan, �
 - Kontrollera dina ändringar på URL:
 
   ```
-  https://<subdomän>-<modulnamn>.taitaja.webkehitys.fi
+  https://<subdomän>-<modulnamn>.taitaja2026.nstrim.app/
   ```
 
 > Varje student tilldelas ett användarnamn, ett lösenord och ett alias.
@@ -89,7 +89,7 @@ Om anvisningarna i dokumentationen står i konflikt med instruktionerna nedan, �
 - Använd följande värdinställning för att ansluta till databasen:
 
   ```php
-  define('DB_HOST', 'db.taitaja.webkehitys.fi');
+  define('DB_HOST', 'db.taitaja2026.nstrim.app/');
   ```
 
 Varje användare har förutbestämda databaser:
@@ -110,21 +110,13 @@ comp02_backend
 
 ## 4. Automation och distribution
 
-- Varje **push** distribueras automatiskt till tävlings-URL:
+- Varje **push** distribueras automatiskt till tävlings-URL:en, som du hittar i ditt behörighetsdokument under “Module URLs”.
 
-  ```
-  https://<subdomän>-<modulnamn>.taitaja2026.nstrim.app/
-  ```
+- **Välj rätt repository**. Repository-mappning är viktig! Utan den distribueras ditt arbete inte automatiskt. Du kan göra detta i din tävlingsdashboard.
+  ![Repository mapping](/img/select_repo.png)
 
-- Eftersom varje Git push startar en deployeringsprocess som tar tid och använder resurser, rekommenderar vi att samla ändringar och göra pushar mer sällan.
-- Kontrollera dina ändringar på tävlings-URL efter varje push.
+- Välj repositoryt från listan över repositories i ditt Gitea-konto. Tryck sedan på spara, så skapas en ny mappning och i bakgrunden sätts deploymenten upp.
 
----
+- Eftersom varje Git-push triggar en deploy-process som tar tid och använder resurser, rekommenderar vi att du grupperar ändringar och pushar mer sällan.
 
-> Varje student tilldelas ett användarnamn, ett lösenord och ett alias.
-> Aliaset bildar subdomänen som används i tävlingsmiljön.
->
-> Till exempel alias **`skdjf`** visas som:
->
-> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
-> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/
+- Kontrollera dina ändringar på tävlings-URL:en efter varje push.
