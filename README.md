@@ -20,6 +20,7 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🚧 **TUNNETTU ONGELMA**: Tietokantayhteyksissä on ongelmia useilla kilpailijoilla. (23.1.)
 - 🚧 **TUNNETTU ONGELMA**: Git-serveri on tällä hetkellä kaatunut (26.1.)
 - 🚧 **TUNNETTU ONGELMA**: React-vite templatessa on mukana Tailwind, vaikka sen käyttö on kielletty. Tämä poistetaan templatesta ennen kilpailua. (26.1.)
+- 🔧 **MUUTOS**: Git-serveri toimii taas (26.1.)
 
 ### System updates, changes, and known issues
 
@@ -29,6 +30,7 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🚧 **KNOWN ISSUE**: Database connection issues for multiple competitors. (23.1.)
 - 🚧 **KNOWN ISSUE**: Git-server is down at the moment (26.1.)
 - 🚧 **KNOWN ISSUE**: React-vite template includes Tailwind even though its use is forbidden. Tailwind will be removed from the template before the competition. (26.1.)
+- 🔧 **FIX**: Git server back online (26.1.)
 
 ## Semifinaali
 
