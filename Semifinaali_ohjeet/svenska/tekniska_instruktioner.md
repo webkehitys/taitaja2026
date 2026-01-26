@@ -1,5 +1,11 @@
 # Instruktioner
 
+## Dokumentation för NSTRIM-systemet
+
+**Engelskspråkig dokumentation finns på https://mc.nstrim.io/docs/competitor och den är till stor hjälp.**
+
+Om anvisningarna i dokumentationen står i konflikt med instruktionerna nedan, är systemdokumentationen sannolikt den korrekta. Vi strävar efter att förtydliga användningsanvisningarna så att deployment-processen ska fungera bättre.
+
 ## Snabb Översikt
 
 1. Skapa ett repo med hjälp av de tillhandahållna mallarna på [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/). Det är viktigt att använda de givna mallarna eftersom de innehåller Gitea Actions-funktioner och automatiskt publicerar ditt arbete vid push.

@@ -1,5 +1,11 @@
 # Instructions
 
+## NSTRIM system documentation
+
+**The service's own documentation can be found at https://mc.nstrim.io/docs/competitor and it is very helpful.**
+
+If the instructions in the documentation conflict with the instructions below, the system documentation is more likely to be correct. We are working to clarify the usage instructions so that the deployment process will succeed more reliably.
+
 ## Quick Overview
 
 1. Create a repository using the provided templates at [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/). It is important to use the given templates as they include Gitea Actions functionality and will automatically deploy your work upon push.

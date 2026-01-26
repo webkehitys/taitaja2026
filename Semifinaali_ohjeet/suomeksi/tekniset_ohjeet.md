@@ -1,5 +1,11 @@
 # Ohjeet
 
+### NSTRIM-järjestelmän dokumentaatio
+
+Tästä osoitteesta https://mc.nstrim.io/docs/competitor löytyy englanninkielinien dokumentaatio, joka auttaa paljon.
+
+Jos dokumentaation ohjeistus on ristiriidassa tässä alla olevien ohjeiden kanssa, järjestelmän dokumentaatio on todennäköisemmin oikeassa. Yritämme selventää käyttöohjeita, jotta deployment-prosessi onnistuisi paremmin.
+
 ## Ohjeet pähkinänkuoressa
 
 1. Luo repositorio valmiiden mallipohjien avulla osoitteessa [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/). On tärkeää käyttää annettuja pohjia, koska ne sisältävät Gitea Actions -ominaisuuden ja julkaisevat työsi automaattisesti pushin yhteydessä.

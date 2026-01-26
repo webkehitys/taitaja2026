@@ -1,3 +1,9 @@
+### NSTRIM-järjestelmän dokumentaatio
+
+**Tästä osoitteesta https://mc.nstrim.io/docs/competitor löytyy englanninkielinien dokumentaatio, joka auttaa paljon.**
+
+Jos dokumentaation ohjeistus on ristiriidassa tässä repossa oleviin ohjeiden kanssa, järjestelmän dokumentaatio on todennäköisemmin oikeassa. Yritämme selventää käyttöohjeita, jotta deployment-prosessi onnistuisi paremmin.
+
 ### Kilpailujärjestelmän tunnukset
 
 Kilpailijat kirjautuvat järjestelmään henkilökohtaisilla tunnuksilla. Kilpailijat saavat tunnuksen ja salasanan sähköpostitse tänään. Samat tunnukset ovat käytössä jo nyt järjestelmän testaamiseen sekä itse kilpailupäivänä.

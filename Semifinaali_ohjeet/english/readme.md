@@ -1,3 +1,9 @@
+## NSTRIM system documentation
+
+**The service's own documentation can be found at https://mc.nstrim.io/docs/competitor and it is very helpful.
+**
+If the instructions in the documentation conflict with the instructions in this repository, the system documentation is more likely to be correct. We are working to clarify the usage instructions so that the deployment process will succeed more reliably.
+
 ### Competition System Login Credentials
 
 Competitors log in to the system using personal credentials. Competitors will receive their username and password by email today. The same credentials can be used immediately for system testing and on the competition day.

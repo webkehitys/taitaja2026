@@ -1,3 +1,9 @@
+## Dokumentation för NSTRIM-systemet
+
+**Engelskspråkig dokumentation finns på https://mc.nstrim.io/docs/competitor och den är till stor hjälp.**
+
+Om anvisningarna i dokumentationen står i konflikt med anvisningarna i detta repository, är systemdokumentationen sannolikt den korrekta. Vi strävar efter att förtydliga användningsanvisningarna så att deployment-processen ska fungera bättre.
+
 ### Inloggningsuppgifter till tävlingssystemet
 
 De tävlande loggar in i systemet med personliga inloggningsuppgifter. De tävlande får användarnamn och lösenord via e-post idag. Samma inloggningsuppgifter kan användas redan nu för testning av systemet samt på tävlingsdagen.
