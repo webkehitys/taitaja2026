@@ -22,7 +22,7 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🚧 **TUNNETTU ONGELMA**: Joissakin templateissa on mukana Tailwind, vaikka sen käyttö on kielletty. Tämä poistetaan templateista ennen kilpailua. (26.1.)
 - 🔧 **MUUTOS**: Git-serveri toimii taas. (26.1.)
 - 🔄 **PÄIVITYS**: Lisätty ohjeisiin linkki NSTRIM-dokumentaatioon. (26.1.)
-- 🔧 **MUUTOS**: Kilpailijan Dashboardista puuttui kohta, jossa valitaan mitä repository halutaan julkaista kilpailijan sivulla. Se on nyt lisätty näkymään. Merkitsen aiemman build ongelmat nyt "ratkaistuiksi", ottakaa yhteyttä jos ongelmat edelleen jatkuvat.
+- 🔧 **MUUTOS**: Kilpailijan Dashboardista puuttui kohta, jossa valitaan mitä repository halutaan julkaista kilpailijan sivulla. Se on nyt lisätty näkymään. Merkitsen aiemman build ongelmat nyt "ratkaistuiksi", ottakaa yhteyttä jos ongelmat edelleen jatkuvat.(26.1.)
 
 ### System updates, changes, and known issues
 
@@ -34,7 +34,7 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🚧 **KNOWN ISSUE**: Some templates include Tailwind even though its use is forbidden. Tailwind will be removed from the templates before the competition. (26.1.)
 - 🔧 **FIX**: Git server back online. (26.1.)
 - 🔄 **UPDATE**: Added a link to the system documentation in the instructions.(26.1.)
-- 🔧 **FIX**: Competitor dashboard was missing the option to chose which repository is deployd on the competitor's page. It has now been added. Marking the previous deployment issue as solved, let me know if issues persist.
+- 🔧 **FIX**: Competitor dashboard was missing the option to chose which repository is deployd on the competitor's page. It has now been added. Marking the previous deployment issue as solved, let me know if issues persist. (26.1.)
 
 ## Semifinaali
 
