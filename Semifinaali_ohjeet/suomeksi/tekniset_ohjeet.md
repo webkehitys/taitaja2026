@@ -1,122 +1,139 @@
 # Ohjeet
 
-### NSTRIM-järjestelmän dokumentaatio
+(päivitetty 27.1.)
 
-Tästä osoitteesta https://mc.nstrim.io/docs/competitor löytyy englanninkielinien dokumentaatio, joka auttaa paljon.
+## Tärkeää tietoa muutoksista ohjeissa
 
-Jos dokumentaation ohjeistus on ristiriidassa tässä alla olevien ohjeiden kanssa, järjestelmän dokumentaatio on todennäköisemmin oikeassa. Yritämme selventää käyttöohjeita, jotta deployment-prosessi onnistuisi paremmin.
+- Edellisestä vuodesta poiketen tänä vuonna on käytössä vain yksi repositorio, joka julkaistaan. Viime vuonna oli erilliset repositoriot backendille ja frontendille. Kaikkien kohdalla tämä ei ollut ongelmatonta, joten tänä vuonna käytössä on vain yksi.
+- Kilpailijan tehtävänä on konfiguroida oma projektinsa niin, että se ei tarvitse backendille ja frontendille erillisiä repositorioita.
 
-## Ohjeet pähkinänkuoressa
+> _Pahoittelut siitä, että näiden ajantasalla olevien ohjeiden tekemisessä meni näin pitkään. Ongelmat julkaisuputkessa ja reposition mappaamisessä aiheuttivat sen, etten päässyt päivittämään ohjeita, kun omakaan ympäristö ei toiminut. -Laura/semifinaalivastaava_
 
-1. Luo repositorio valmiiden mallipohjien avulla osoitteessa [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/). On tärkeää käyttää annettuja pohjia, koska ne sisältävät Gitea Actions -ominaisuuden ja julkaisevat työsi automaattisesti pushin yhteydessä.
-2. Kloonaa projekti ja työskentele paikallisesti. Commitoi usein, mutta pushaa vain, kun suurempi kokonaisuus on valmis. Jokainen push kestää jonkin aikaa julkaista (esim. Next.js ja Laravel jopa 2 minuuttia). Ole maltillinen.
-3. Voit käyttää phpMyAdminia osoitteessa [pma.taitaja2026.nstrim.app](pma.taitaja2026.nstrim.app).
+## Tunnukset ja osoitteet
 
----
+- Kilpailijoille lähetetetyssä Competitor Credentials -dokumentista löytyy kaikki tarvittavat tunnukset, salasana, access code ja url-osoitteet. Tiedot löytyvät myös Hallintapaneelista.
 
-## 1. Luo uusi repositorio
+- Samat tunnukset ovat käytössä ennen kilpailua ja kilpailun aikana.
 
-- Mene Git-palvelimelle: [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/).
-- Kirjaudu sisään käyttäjätunnuksellasi ja salasanallasi.
-- Siirry **Organisaatio → Frameworks**.
+## Dashboard eli kilpailijan hallintapaneeli
 
-  ![orgs](/img/orgs.png)
+- Pääset kaikkiin kilpailussa tarvittaviin palveluihin helposti [kilpailijan hallintapaneelista (Competitor Dashboard)](https://mc.nstrim.io/cd)
 
-- Valitse framework, jota haluat käyttää, tai "vanilla"-pohja.
-- Klikkaa **"Use this template"** luodaksesi uuden repositorion.
-- Nimeä repositorio moduulin nimen mukaan: **frontend** tai **backend**. Vanilla-projektissa nimeä repositorio **frontend**.
+- Sinne kirjautumiseen tarvittava **6-numeroinen access code** löytyy Competitor Credentials -dokumentista.
 
-  ![secrets settings](/img/new_repo.png)
+### Hallintapaneelista:
 
-- Avaa repositoriosi asetukset: **Settings → Actions → Secrets**.
-- Lisää seuraavat:
-  - **USER:** Käyttäjänimesi (esim. comp01)
-  - **PASS:** Salasanasi (esim. test123)
-
-  ![secrets settings](/img/add-secret.png)
-
-  ![secrets settings](/img/secrets.png)
-
-- Tee commit ja tarkista, että Gitea Actions toimii oikein.
-- Tarkista muutokset URL-osoitteessa:
-
-  ```
-  https://<aliverkko>-<moduulinimi>.taitaja2026.nstrim.app/fi
-  ```
-
-> Jokaisella kilpailijalle on annettu käyttäjätunnus, salasana ja alias.
-> Alias muodostaa aliverkon osoitteen, jota käytetään kilpailuympäristössä.
->
-> Esimerkiksi alias **`skdjf`** näkyy näin:
->
-> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
-> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/
+- Näet paljonko kilpailuaikaa on jäljellä
+- Löytyy linkki verkkosivulle, johon oma projektisi julkaistaan
+- Löytyy linkki Gitea -palveluun
+- Löytyy linkki PHPMyAdmin -palveluun
+- Löytyy linkki [ohjeisiin ja dokumentaatioon](https://mc.nstrim.io/docs/competitor)
+- Teet repositorion mappayksen eli julkaistavan repositorion valinnan
 
 ---
 
-## 2. Repositorion kloonaus ja käyttö
+## Projetin aloitus ja julkaisu pähkinänkuoressa
+
+- Luo repositorio mallipohjasta
+- Kloonaa repositorio
+- Koodiin ei tarvitse tehdä muutoksia
+- Työnnä (push) paikallisesta ensimmäinen commit
+- Mene hallintapaneeliin (dashboard)
+- Kytke moduuli uuteen repositorioon (module mapping)
+- Sovellus toimii
+
+---
+
+### 1. Repositorion luominen
+
+- Avaa Git-palvelu (linkki löytyy kilpailijan hallintapaneelista):
+  [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/)
+- Kirjaudu sisään tunnuksilla, jotka löytyvät kilpailijan hallintapaneelista.
+- Luo uusi repositorio valmiista mallipohjasta (framework tai “vanilla”).
+
+![new repo](/img/orgs.png)
+
+- Nimeä repositorio haluamallasi tavalla:
+  - käytä vain **pieniä kirjaimia**
+  - ei välilyöntejä
+
+- Valitse **Template items** -kohdasta:
+  - ☑ **Git content (Default Branch)**
+
+![new repo](/img/new_repo.png)
+
+Mallipohjat sisältävät automaattisen deployn vaatimat asetukset.
+
+---
+
+### 2. Repositorion kloonaus ja kehitys
 
 **Kloonaa repositorio:**
 
-- Käytä repositorion URL-osoitetta kloonaukseen:
+- Kopioi repositorion URL Gitean käyttöliittymästä:
 
-  ```bash
-  git clone https://git.taitaja2026.nstrim.app//<käyttäjänimi>/<moduulinimi>.git
-  ```
+![git clone](/img/clone.png)
 
-  **Esimerkki:**
+- Kloonaa repositorio paikalliseen koneeseesi
 
-  ```bash
-  git clone https://git.taitaja2026.nstrim.app//comp01/frontend.git
-  ```
+**Koodaus:**
 
-**Muokkaa, committaa ja kehity:**
-
-- Tee säännöllisesti committeja, jotta työ pysyy järjestyksessä.
-- Päivitä **README-tiedosto** tärkeillä tiedoilla, kuten asennusohjeilla ja riippuvuuksilla.
+- Tee muutokset paikallisesti
+- Tee committeja säännöllisesti eli usein
+- Päivitä tarvittaessa README-tiedosto (asennusohjeet, riippuvuudet)
 
 ---
 
-## 3. phpMyAdmin käyttö
+### 3. Repositorion mappaus (pakollinen)
 
-**Avaa phpMyAdmin:**
+⚠️ **Tämä vaihe on pakollinen, jotta sivusi voidaan julkaista**
 
-- Mene osoitteeseen [pma.taitaja2026.nstrim.app](pma.taitaja2026.nstrim.app).
-- Kirjaudu sisään käyttäjätunnuksellasi ja salasanallasi.
+- Avaa kilpailijan hallintapaneeli
+- Valitse oikea repositorio Gitea-tilisi repositoriolistasta
+- Tallenna valinta
 
-**Tietokantayhteys:**
+![Repository mapping](/img/select_repo.png)
 
-- Käytä alla olevaa host-asetusta yhdistääksesi tietokantaan:
-
-  ```php
-  define('DB_HOST', 'db.taitaja2026.nstrim.app/');
-  ```
-
-Jokaisella käyttäjällä on ennalta määrätyt tietokannat:
-
-```
-username_frontend
-username_backend
-```
-
-**Esimerkki:**
-
-```
-comp01_frontend
-comp02_backend
-```
+Ilman repositorion mappausta työsi **ei julkaistu automaattisesti**, vaikka push onnistuu.
 
 ---
 
-## 4. Automaatio ja julkaisu
+### 4. Automaattinen deploy ja julkaisu
 
-- Jokainen **push** julkaisee automaattisesti kilpailun URL-osoitteeseen, jonka löydät tunnistetiedoistasi kohdan “Module URLs” alta.
+- Jokainen Git-push käynnistää automaattisen deployn
+- Julkaisuprosessi kestää hetken:
+  - esim. Next.js ja Laravel jopa noin 2 minuuttia
 
-- **Valitse oikea repositorio** Repositorion mappaus on tärkeää! Ilman sitä työsi ei deployaudu automaattisesti. Voit tehdä tämän kilpailijan hallintapaneelissa.
-  ![Repository mapping](/img/select_repo.png)
+- Deployn tilan näet Gitean Actions -välilehdeltä
+  ![workflows](/img/status.png)
 
-- Valitse repositorio Gitea-tilisi repositoriolistasta. Paina sitten tallenna, jolloin uusi mappaus luodaan ja deployment asetetaan taustalla.
+Mihin sivu tylee: URL-osoite löytyy hallintapaneelista kohdasta **Module Work URL** alta.
+![module url](/img/url.png)
 
-- Koska jokainen Git-push käynnistää deploy-prosessin, joka vie aikaa ja käyttää resursseja, suosittelemme ryhmittelemään muutokset ja pushaamaan harvemmin.
+**Suositukset:**
 
-- Tarkista muutoksesi kilpailun URL-osoitteessa jokaisen pushin jälkeen.
+- Commitoi usein, mutta pushaa vain, kun isompi kokonaisuus on valmis.
+- Tarkista aina deployn tila ennen jatkamista.
+- Varmista, että viimeinen push tapahtuu ennen moduulin aikarajan päättymistä.
+
+---
+
+## Tietokantaan yhdistäminen - phpMyAdminin käyttö
+
+Pääset palveluun helposti **hallintapaneelin** kautta.
+
+**Kirjautuminen:**
+
+- Klikkaa hallintapaneelista MySQL-ikonia, joka vie sinut osoitteeseen:
+  [https://pma.taitaja2026.nstrim.app](https://pma.taitaja2026.nstrim.app)
+- Kirjaudu sisään tunnuksilla, jotka löytyvät kilpailijan hallintapaneelista.
+
+**Tietokantayhteys sovelluksessa:**
+
+```php
+define('DB_HOST', 'db.taitaja2026.nstrim.app');
+```
+
+Tietokannan käyttäjätunnus ja salasana löytyvät kilpailijan hallintapaneelista.
+
+---

@@ -1,122 +1,143 @@
 # Instruktioner
 
-## Dokumentation för NSTRIM-systemet
+(uppdaterad 27.1.)
 
-**Engelskspråkig dokumentation finns på https://mc.nstrim.io/docs/competitor och den är till stor hjälp.**
+## Viktig information om ändringar i instruktionerna
 
-Om anvisningarna i dokumentationen står i konflikt med instruktionerna nedan, är systemdokumentationen sannolikt den korrekta. Vi strävar efter att förtydliga användningsanvisningarna så att deployment-processen ska fungera bättre.
+- Till skillnad från förra året används och publiceras i år endast **ett repository**. Förra året fanns separata repositories för backend och frontend. Detta fungerade inte problemfritt för alla, därför används i år endast ett repository.
+- Det är tävlandens ansvar att konfigurera sitt projekt så att separata repositories för backend och frontend **inte behövs**.
 
-## Snabb Översikt
+> _Jag ber om ursäkt för att det tog så lång tid att ta fram uppdaterade instruktioner. Problem i deploy-pipen och repository mapping gjorde att jag inte kunde uppdatera instruktionerna tidigare, eftersom inte heller min egen miljö fungerade.
+> – Laura / semifinalansvarig_
 
-1. Skapa ett repo med hjälp av de tillhandahållna mallarna på [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/). Det är viktigt att använda de givna mallarna eftersom de innehåller Gitea Actions-funktioner och automatiskt publicerar ditt arbete vid push.
-2. Klona projektet och arbeta lokalt. Commita ofta, men pusha bara när en större del är klar. Varje push tar tid att publicera (t.ex. Next.js och Laravel upp till 2 minuter). Ha tålamod.
-3. Du kan använda phpMyAdmin vid behov på [pma.taitaja2026.nstrim.app](pma.taitaja2026.nstrim.app).
+## Inloggningsuppgifter och adresser
 
----
+- Alla nödvändiga användarnamn, lösenord, accesskoder och URL-adresser finns i dokumentet **Competitor Credentials** som skickats till de tävlande. Samma information finns också i Dashboarden.
 
-## 1. Skapa ett nytt repo
+- Samma inloggningsuppgifter används **före tävlingen och under tävlingen**.
 
-- Gå till Git-servern: [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/).
-- Logga in med ditt användarnamn och lösenord.
-- Navigera till **Organisation → Frameworks**.
+## Dashboard (Competitor Dashboard)
 
-  ![orgs](/img/orgs.png)
+- Du når alla tjänster som behövs under tävlingen via
+  [Competitor Dashboard](https://mc.nstrim.io/cd)
 
-- Välj det ramverk du vill använda eller använd "vanilla"-mallen.
-- Klicka på **"Use this template"** för att skapa ett nytt repo.
-- Namnge repot efter modulnamnet: **frontend** eller **backend**. För vanilla-projekt, namnge repot **frontend**.
+- Den **6-siffriga accesskoden** som krävs för inloggning finns i dokumentet Competitor Credentials.
 
-![secrets settings](/img/new_repo.png)
+### I Dashboarden kan du:
 
-- Öppna inställningarna för ditt repo: **Settings → Actions → Secrets**.
-- Lägg till följande:
-  - **USER:** Ditt användarnamn (t.ex. comp01)
-  - **PASS:** Ditt lösenord (t.ex. test123)
-
-  ![secrets settings](/img/add-secret.png)
-
-  ![secrets settings](/img/secrets.png)
-
-- Commita och kontrollera att Gitea Actions fungerar korrekt.
-- Kontrollera dina ändringar på URL:
-
-  ```
-  https://<subdomän>-<modulnamn>.taitaja2026.nstrim.app/
-  ```
-
-> Varje student tilldelas ett användarnamn, ett lösenord och ett alias.
-> Aliaset bildar subdomänen som används i tävlingsmiljön.
->
-> Till exempel alias **`skdjf`** visas som:
->
-> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
-> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/
+- Se hur mycket tävlingstid som återstår
+- Hitta länken till webbplatsen där ditt projekt publiceras
+- Hitta en länk till Gitea-tjänsten
+- Hitta en länk till phpMyAdmin-tjänsten
+- Hitta en länk till [instruktioner och dokumentation](https://mc.nstrim.io/docs/competitor)
+- Utföra repository mapping, dvs. välja vilket repository som publiceras
 
 ---
 
-## 2. Klona repot och arbeta
+## Projektstart och publicering i korthet
 
-**Klona repot:**
-
-- Använd repots URL för att klona:
-
-  ```bash
-  git clone https://git.taitaja2026.nstrim.app//<användarnamn>/<modulnamn>.git
-  ```
-
-  **Exempel:**
-
-  ```bash
-  git clone https://git.taitaja2026.nstrim.app//comp01/frontend.git
-  ```
-
-**Redigera, commita och utveckla:**
-
-- Commita regelbundet för att hålla arbetet organiserat.
-- Uppdatera **README-filen** med viktig information som installationsinstruktioner och beroenden.
+- Skapa ett repository från en mall
+- Klona repositoriet
+- Inga ändringar i koden krävs
+- Pusha den första committen från din lokala miljö
+- Gå till Dashboarden
+- Koppla modulen till det nya repositoriet (module mapping)
+- Applikationen fungerar
 
 ---
 
-## 3. Använda phpMyAdmin
+### 1. Skapa ett repository
 
-**Öppna phpMyAdmin:**
+- Öppna Git-tjänsten (länken finns i Competitor Dashboard):
+  [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/)
+- Logga in med de inloggningsuppgifter som finns i Competitor Dashboard.
+- Skapa ett nytt repository från en färdig mall (framework eller ”vanilla”).
 
-- Gå till [pma.taitaja2026.nstrim.app](pma.taitaja2026.nstrim.app).
-- Logga in med ditt användarnamn och lösenord.
+![new repo](/img/orgs.png)
 
-**Databasanslutning:**
+- Namnge repositoriet valfritt:
+  - använd endast **små bokstäver**
+  - inga mellanslag
 
-- Använd följande värdinställning för att ansluta till databasen:
+- Under **Template items**, välj:
+  - ☑ **Git content (Default Branch)**
 
-  ```php
-  define('DB_HOST', 'db.taitaja2026.nstrim.app/');
-  ```
+![new repo](/img/new_repo.png)
 
-Varje användare har förutbestämda databaser:
-
-```
-användarnamn_frontend
-användarnamn_backend
-```
-
-**Exempel:**
-
-```
-comp01_frontend
-comp02_backend
-```
+Mallarna innehåller den konfiguration som krävs för automatisk deployment.
 
 ---
 
-## 4. Automation och distribution
+### 2. Kloning av repository och utveckling
 
-- Varje **push** distribueras automatiskt till tävlings-URL:en, som du hittar i ditt behörighetsdokument under “Module URLs”.
+**Klona repositoriet:**
 
-- **Välj rätt repository**. Repository-mappning är viktig! Utan den distribueras ditt arbete inte automatiskt. Du kan göra detta i din tävlingsdashboard.
-  ![Repository mapping](/img/select_repo.png)
+- Kopiera repository-URL:en från Gitea-gränssnittet:
 
-- Välj repositoryt från listan över repositories i ditt Gitea-konto. Tryck sedan på spara, så skapas en ny mappning och i bakgrunden sätts deploymenten upp.
+![git clone](/img/clone.png)
 
-- Eftersom varje Git-push triggar en deploy-process som tar tid och använder resurser, rekommenderar vi att du grupperar ändringar och pushar mer sällan.
+- Klona repositoriet till din lokala dator
 
-- Kontrollera dina ändringar på tävlings-URL:en efter varje push.
+**Kodning:**
+
+- Gör ändringar lokalt
+- Commitera regelbundet (ofta)
+- Uppdatera README-filen vid behov (installationsanvisningar, beroenden)
+
+---
+
+### 3. Repository mapping (obligatoriskt)
+
+⚠️ **Detta steg är obligatoriskt för att din webbplats ska kunna publiceras**
+
+- Öppna Competitor Dashboard
+- Välj rätt repository från listan över repositories i ditt Gitea-konto
+- Spara valet
+
+![Repository mapping](/img/select_repo.png)
+
+Utan repository mapping **publiceras ditt arbete inte automatiskt**, även om pushen lyckas.
+
+---
+
+### 4. Automatisk deployment och publicering
+
+- Varje Git-push startar en automatisk deployment
+
+- Deploy-processen tar en stund:
+  - till exempel kan Next.js och Laravel ta upp till cirka 2 minuter
+
+- Du kan se deploy-statusen i fliken **Gitea Actions**
+  ![workflows](/img/status.png)
+
+**Var projektet publiceras:** Tävlingens URL finns i Dashboarden under **Module Work URL**
+
+![module url](/img/url.png)
+
+**Rekommendationer:**
+
+- Commitera ofta, men pusha endast när en större helhet är färdig.
+- Kontrollera alltid deploy-statusen innan du fortsätter.
+- Säkerställ att din sista push sker innan modulens tidsgräns löper ut.
+
+---
+
+## Ansluta till databasen – använda phpMyAdmin
+
+Du når tjänsten enkelt via **Dashboarden**.
+
+**Inloggning:**
+
+- Klicka på MySQL-ikonen i Dashboarden, som tar dig till:
+  [https://pma.taitaja2026.nstrim.app](https://pma.taitaja2026.nstrim.app)
+- Logga in med de inloggningsuppgifter som finns i Competitor Dashboard.
+
+**Databasanslutning i applikationen:**
+
+```php
+define('DB_HOST', 'db.taitaja2026.nstrim.app');
+```
+
+Databasens användarnamn och lösenord finns i Competitor Dashboard.
+
+---

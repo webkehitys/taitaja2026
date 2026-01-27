@@ -1,124 +1,143 @@
 # Instructions
 
-## NSTRIM system documentation
+(updated 27.1.)
 
-**The service's own documentation can be found at https://mc.nstrim.io/docs/competitor and it is very helpful.**
+## Important information about changes to the instructions
 
-If the instructions in the documentation conflict with the instructions below, the system documentation is more likely to be correct. We are working to clarify the usage instructions so that the deployment process will succeed more reliably.
+- Unlike last year, only **one repository** is used and deployed this year. Last year there were separate repositories for backend and frontend. This was not problem-free for everyone, so this year only one repository is used.
+- It is the competitor’s responsibility to configure their project so that separate repositories for backend and frontend are **not required**.
 
-## Quick Overview
+> _I apologize that it took this long to provide up-to-date instructions. Issues in the deployment pipeline and repository mapping prevented me from updating the instructions earlier, as my own environment was not working either.
+> – Laura / semifinal coordinator_
 
-1. Create a repository using the provided templates at [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/). It is important to use the given templates as they include Gitea Actions functionality and will automatically deploy your work upon push.
-2. Clone the project and work locally. Commit frequently but only push when a larger feature is ready. Each push takes time to deploy (e.g., Next.js and Laravel up to 2 minutes). Be patient.
-3. You can use phpMyAdmin at [pma.taitaja2026.nstrim.app](pma.taitaja2026.nstrim.app).
+## Credentials and addresses
 
----
+- All required usernames, passwords, access codes, and URLs can be found in the **Competitor Credentials** document sent to competitors. The same information is also available in the Dashboard.
 
-## 1. Create a New Repository
+- The same credentials are used **before the competition and during the competition**.
 
-- Go to the Git server: [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/).
-- Log in with your username and password.
-- Navigate to **Organization → Frameworks**.
+## Dashboard (Competitor Dashboard)
 
-  ![orgs](/img/orgs.png)
+- You can access all services required during the competition via the
+  [Competitor Dashboard](https://mc.nstrim.io/cd)
 
-- Select the framework you want to use or the "vanilla" template.
-- Click **"Use this template"** to create a new repository.
-- Name the repository according to the module name: **frontend** or **backend**. For vanilla projects, name the repository **frontend**.
+- The **6-digit access code** required to log in can be found in the Competitor Credentials document.
 
-  ![secrets settings](/img/new_repo.png)
+### In the Dashboard you can:
 
-- Open your repository settings: **Settings → Actions → Secrets**.
-- Add the following:
-  - **USER:** Your username (e.g., comp01)
-  - **PASS:** Your password (e.g., test123)
-
-  ![secrets settings](/img/add-secret.png)
-
-  ![secrets settings](/img/secrets.png)
-
-- Commit and verify that Gitea Actions is working correctly.
-- Check your changes at the URL:
-
-  ```
-  https://<subdomain>-<module_name>.taitaja2026.nstrim.app/
-  ```
-
-> Each competitor is assigned a username, password, and alias.
-> The alias forms the subdomain address used in the competition environment.
->
-> For example, alias **`skdjf`** appears as:
->
-> - Frontend: https://skdjf-frontend.taitaja2026.nstrim.app/
-> - Backend: https://skdjf-backend.taitaja2026.nstrim.app/
+- See how much competition time remains
+- Find the link to the website where your project is deployed
+- Find a link to the Gitea service
+- Find a link to the phpMyAdmin service
+- Find a link to the [instructions and documentation](https://mc.nstrim.io/docs/competitor)
+- Perform repository mapping, i.e. select which repository is deployed
 
 ---
 
-## 2. Clone the Repository and Work
+## Project start and deployment in a nutshell
+
+- Create a repository from a template
+- Clone the repository
+- No changes to the code are required
+- Push the first commit from your local environment
+- Go to the Dashboard
+- Connect the module to the new repository (module mapping)
+- The application works
+
+---
+
+### 1. Creating a repository
+
+- Open the Git service (the link can be found in the Competitor Dashboard):
+  [https://git.taitaja2026.nstrim.app/](https://git.taitaja2026.nstrim.app/)
+- Log in using the credentials found in the Competitor Dashboard.
+- Create a new repository from a ready-made template (framework or “vanilla”).
+
+![new repo](/img/orgs.png)
+
+- Name the repository as you wish:
+  - use **lowercase letters only**
+  - no spaces
+
+- Under **Template items**, select:
+  - ☑ **Git content (Default Branch)**
+
+![new repo](/img/new_repo.png)
+
+The templates include the required configuration for automatic deployment.
+
+---
+
+### 2. Cloning the repository and development
 
 **Clone the repository:**
 
-- Use the repository URL to clone:
+- Copy the repository URL from the Gitea user interface:
 
-  ```bash
-  git clone https://git.taitaja2026.nstrim.app//<username>/<module_name>.git
-  ```
+![git clone](/img/clone.png)
 
-  **Example:**
+- Clone the repository to your local machine
 
-  ```bash
-  git clone https://git.taitaja2026.nstrim.app//comp01/frontend.git
-  ```
+**Coding:**
 
-**Edit, commit, and develop:**
-
-- Commit regularly to keep your work organized.
-- Update the **README file** with important information like installation instructions and dependencies.
+- Make changes locally
+- Commit regularly (frequently)
+- Update the README file if necessary (installation instructions, dependencies)
 
 ---
 
-## 3. Using phpMyAdmin
+### 3. Repository mapping (required)
 
-**Access phpMyAdmin:**
+⚠️ **This step is required for your site to be deployed**
 
-- Go to [pma.taitaja2026.nstrim.app](pma.taitaja2026.nstrim.app).
-- Log in with your username and password.
+- Open the Competitor Dashboard
+- Select the correct repository from the list of repositories in your Gitea account
+- Save the selection
 
-**Database connection:**
+![Repository mapping](/img/select_repo.png)
 
-- Use the following host setting to connect to the database:
-
-  ```php
-  define('DB_HOST', 'db.taitaja2026.nstrim.app/');
-  ```
-
-Each user has predefined databases:
-
-```
-username_frontend
-username_backend
-```
-
-**Example:**
-
-```
-comp01_frontend
-comp02_backend
-```
+Without repository mapping, your work **will not be deployed automatically**, even if the push succeeds.
 
 ---
 
-## 4. Automation and Deployment
+### 4. Automatic deployment and publishing
 
-- Each **push** automatically deploys to the competition URL which you can see on your credentials document under "Module URLs"
+- Every Git push triggers an automatic deployment
 
-- **Select the right repository**
-  Repository mapping is important! Without it, your work will not be automatically deployed.
-  You can do this in your competitor dashboard.
-  ![Repository mapping](/img/select_repo.png)
+- The deployment process takes a moment:
+  - for example, Next.js and Laravel may take up to approximately 2 minutes
 
-- Select the repository from the list of repositories in your Gitea account. Then press save and you will see a new mapping created and in the background the deployment is setup.
+- You can view the deployment status in the **Gitea Actions** tab
+  ![workflows](/img/status.png)
 
-- Since each Git push triggers a deployment process that takes time and uses resources, we recommend grouping changes and pushing them less frequently.
+**Where the project is deployed:** The competition URL can be found in the Dashboard under **Module Work URL**
 
-- Check your changes at the competition URL after each push.
+![module url](/img/url.png)
+
+**Recommendations:**
+
+- Commit frequently, but push only when a larger feature is ready.
+- Always check the deployment status before continuing.
+- Make sure your final push is completed before the module time limit expires.
+
+---
+
+## Connecting to the database – using phpMyAdmin
+
+You can easily access the service via the **Dashboard**.
+
+**Login:**
+
+- Click the MySQL icon in the Dashboard, which takes you to:
+  [https://pma.taitaja2026.nstrim.app](https://pma.taitaja2026.nstrim.app)
+- Log in using the credentials found in the Competitor Dashboard.
+
+**Database connection in the application:**
+
+```php
+define('DB_HOST', 'db.taitaja2026.nstrim.app');
+```
+
+The database username and password can be found in the Competitor Dashboard.
+
+---
