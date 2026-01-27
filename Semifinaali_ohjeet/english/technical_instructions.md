@@ -6,6 +6,7 @@
 
 - Unlike last year, only **one repository** is used and deployed this year. Last year there were separate repositories for backend and frontend. This was not problem-free for everyone, so this year only one repository is used.
 - It is the competitor’s responsibility to configure their project so that separate repositories for backend and frontend are **not required**.
+  - If you for example want to merge the excisting Laravel and React-vite templates, it has to be done yourself eg. build a dist in the react project and copy it into the laravel project.
 
 > _I apologize that it took this long to provide up-to-date instructions. Issues in the deployment pipeline and repository mapping prevented me from updating the instructions earlier, as my own environment was not working either.
 > – Laura / semifinal coordinator_

@@ -6,6 +6,7 @@
 
 - Till skillnad från förra året används och publiceras i år endast **ett repository**. Förra året fanns separata repositories för backend och frontend. Detta fungerade inte problemfritt för alla, därför används i år endast ett repository.
 - Det är tävlandens ansvar att konfigurera sitt projekt så att separata repositories för backend och frontend **inte behövs**.
+  - Om du till exempel vill slå ihop de befintliga Laravel- och React-Vite-mallarna måste detta göras manuellt, till exempel genom att bygga (build) dist-katalogen i React-projektet och kopiera den till Laravel-projektet.
 
 > _Jag ber om ursäkt för att det tog så lång tid att ta fram uppdaterade instruktioner. Problem i deploy-pipen och repository mapping gjorde att jag inte kunde uppdatera instruktionerna tidigare, eftersom inte heller min egen miljö fungerade.
 > – Laura / semifinalansvarig_

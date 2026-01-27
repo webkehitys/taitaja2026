@@ -6,6 +6,7 @@
 
 - Edellisestä vuodesta poiketen tänä vuonna on käytössä vain yksi repositorio, joka julkaistaan. Viime vuonna oli erilliset repositoriot backendille ja frontendille. Kaikkien kohdalla tämä ei ollut ongelmatonta, joten tänä vuonna käytössä on vain yksi.
 - Kilpailijan tehtävänä on konfiguroida oma projektinsa niin, että se ei tarvitse backendille ja frontendille erillisiä repositorioita.
+  - Jos esimerkiksi haluat yhdistää olemassa olevat Laravel- ja React-Vite-templatet, tämä täytyy tehdä itse, esimerkiksi buildaamalla React-projektin dist-kansio ja kopioimalla se Laravel-projektiin.
 
 > _Pahoittelut siitä, että näiden ajantasalla olevien ohjeiden tekemisessä meni näin pitkään. Ongelmat julkaisuputkessa ja reposition mappaamisessä aiheuttivat sen, etten päässyt päivittämään ohjeita, kun omakaan ympäristö ei toiminut. -Laura/semifinaalivastaava_
 
