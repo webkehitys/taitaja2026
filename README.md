@@ -23,7 +23,8 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🔧 **MUUTOS**: Git-serveri toimii taas. (26.1.)
 - 🔄 **PÄIVITYS**: Lisätty ohjeisiin linkki NSTRIM-dokumentaatioon. (26.1.)
 - 🔧 **MUUTOS**: Kilpailijan Dashboardista puuttui kohta, jossa valitaan mitä repository halutaan julkaista kilpailijan sivulla. Se on nyt lisätty näkymään. Merkitsen aiemman build ongelmat nyt "ratkaistuiksi", ottakaa yhteyttä jos ongelmat edelleen jatkuvat.(26.1.)
-- 🚧 **TUNNETTU ONGELMA**: Repositorion mappays-valinta on jälleen kadonnut, koitetaan saada paikalleen ASAP. (27.1.)
+- 🚧 ~~**TUNNETTU ONGELMA**: Repositorion mappays-valinta on jälleen kadonnut, koitetaan saada paikalleen ASAP. (27.1.)~~
+- 🔧 **MUUTOS**: Mappays onnistuu jälleen ja deploymentit näyttävät vihdoin onnistuvan.(27.1)
 
 ### System updates, changes, and known issues
 
@@ -36,7 +37,8 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🔧 **FIX**: Git server back online. (26.1.)
 - 🔄 **UPDATE**: Added a link to the system documentation in the instructions.(26.1.)
 - 🔧 **FIX**: Competitor dashboard was missing the option to chose which repository is deployd on the competitor's page. It has now been added. Marking the previous deployment issue as solved, let me know if issues persist. (26.1.)
-- 🚧 **KNOWN ISSUE**: The repository mapping option has disappeared again. Trying to bring back ASAP (27.1.)
+- 🚧 ~~**KNOWN ISSUE**: The repository mapping option has disappeared again. Trying to bring back ASAP (27.1.)~~
+- 🔧 **FIX**: Mapping is possible and deployments finally seem to go through. (27.1.)
 
 ## Semifinaali
 
