@@ -21,6 +21,13 @@ Följande teknologier stöds för närvarande. Om listan saknar någon teknik so
 **Databas:** MySQL
 
 Användning av färdiga UI-komponentbibliotek **är inte tillåten.**
+Exempel på förbjudna bibliotek inkluderar, men är inte begränsade till:
+
+- Bootstrap
+- Tailwind
+- Material UI
+- jQuery UI
+
 **Python är inte tillåtet** på backend-sidan.
 
 Användning av **artificiell intelligens** är tillåten och ska redovisas enligt separata [instruktioner](ai-swe.pdf).

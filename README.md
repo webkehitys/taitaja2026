@@ -4,7 +4,7 @@
 
 ## Ohjeet Semifinaalia varten
 
-🔄 **PÄIVITYS!** **Tekniset ohjeet järjestelmän käytöstä** on päivitetty vastaamaan tätä vuotta. Löydät ne sekä ohjeistus tekoälyn käytön merkitsemisestä ovat omissa kansioissaan:
+🔄 **PÄIVITYS!** **Tekniset ohjeet järjestelmän käytöstä** on päivitetty vastaamaan tätä vuotta. Löydät ne sekä ohjeistuksen tekoälyn käytön merkitsemisestä omista kansioistaan:
 
 - [suomeksi](Semifinaali_ohjeet/suomeksi/)
 - [på svenska](Semifinaali_ohjeet/svenska/)

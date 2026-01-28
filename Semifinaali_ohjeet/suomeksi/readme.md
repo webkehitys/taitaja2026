@@ -20,7 +20,13 @@ Seuraavat teknologiat ovat tällä hetkellä tuettuja. Jos listasta puuttuu joki
 
 **Tietokanta:** MySQL
 
-Valmiiden UI-komponenttikirjastojen käyttö **ei ole sallittua.**
+Valmiiden UI-komponenttikirjastojen käyttö **ei ole sallittua.** Kiellettyjä kirjastoja ovat muun muassa:
+
+- Bootstrap
+- Tailwind
+- Material UI
+- jQuery UI
+
 **Python ei ole vaihtoehto** backendin puolella.
 
 **Tekoälyn käyttö** on sallittua ja siitä on ilmoitettava erillisen [ohjeen](ai-suomi.pdf) mukaisesti.

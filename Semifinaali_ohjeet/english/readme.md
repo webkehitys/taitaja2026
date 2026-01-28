@@ -20,7 +20,13 @@ The following technologies are currently supported. If the list does not include
 
 **Database:** MySQL
 
-The use of pre-built UI component libraries **is not permitted.**
+The use of pre-built UI component libraries **is not permitted.** Examples of forbidden libraries include but are not limited to:
+
+- Bootstrap
+- Tailwind
+- Material UI
+- jQuery UI
+
 **Python is not an option** for backend.
 
 The use of **artificial intelligence** is allowed and must be declared in accordance with the [instructions](ai-en.pdf).
