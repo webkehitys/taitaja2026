@@ -18,6 +18,7 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🔄 **PÄIVITYS**:Tekniset ohjeet on päivitetty ja toivottavasti isoimmat ongelmat ratkaistu. (27.1)
 - 🔧**MUUTOS**: Poistettu Tailwind niistä templateista, joissa se vielä oli. (todennäköisesti 27.1.)
 - 🔄 **PÄIVITYS**: Järjestelmä käynnistetty uudelleen, lisätty levytilaa ja muistia. (28.1. klo 9.14-9.24)
+- 🔧**MUUTOS**: Korjataan linkki, joka vie "_Welcome to Taitaja 2026 - your environment is ready_" -sivulta takaisin kilpailijan hallintapaneeliin. (28.1.)
 
 ### System updates, changes, and known issues
 
@@ -25,6 +26,7 @@ Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyk
 - 🔄 **UPDATE**: The technical instructions have been updated, and hopefully the biggest issues have now been resolved. (27.1.)
 - 🔧 **CHANGE**: Tailwind removed from the templates where it was still included. (most likely during the night between 27.1.)
 - 🔄 **PÄIVITYS**: Syster restarted with added RAM and diskspace (28.1. at 9.14-9.24)
+- 🔧 **CHANGE**: We will fix the link on the "_Welcome to Taitaja 2026 - your environment is ready_" -page to actually point to the dashboard. (28.1.)
 
 ## Semifinaali
 
