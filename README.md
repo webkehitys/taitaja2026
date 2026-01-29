@@ -2,32 +2,20 @@
 
 # Taitaja 2026 Web-kehitys kilpailutehtävät
 
-## Ohjeet Semifinaalia varten
-
-🔄 **PÄIVITYS!** **Tekniset ohjeet järjestelmän käytöstä** on päivitetty vastaamaan tätä vuotta. Löydät ne sekä ohjeistuksen tekoälyn käytön merkitsemisestä omista kansioistaan:
+## Ohjeet Semifinaalia varten omissa kansioossaan:
 
 - [suomeksi](Semifinaali_ohjeet/suomeksi/)
 - [på svenska](Semifinaali_ohjeet/svenska/)
 - [in English](Semifinaali_ohjeet/english/)
 
-Alla lista testausvaiheessa havaituista ongelmista ja muutoksista aikajärjestyksessä. Aloitin uuden listauksen nyt, kun toivottavasti isoimmat ongelmat on saatu ratkaistua.
+### Huomioita kisan aikana:
 
-### Järjestelmäpäivitykset, muutokset ja tunnetut ongelmat
-
-- 🔄 **PÄIVITYS**: Lisätty Svelte ja tuki typescriptin käyttöön Next.js: kanssa, jonka yhteydessä järjestelmä on alustettu uudelleen. Sallittujen teknologioiden listausta tarkennettu. (22.1.)
-- 🔄 **PÄIVITYS**:Tekniset ohjeet on päivitetty ja toivottavasti isoimmat ongelmat ratkaistu. (27.1)
-- 🔧**MUUTOS**: Poistettu Tailwind niistä templateista, joissa se vielä oli. (todennäköisesti 27.1.)
-- 🔄 **PÄIVITYS**: Järjestelmä käynnistetty uudelleen, lisätty levytilaa ja muistia. (28.1. klo 9.14-9.24)
-- 🔧**MUUTOS**: Korjataan linkki, joka vie "_Welcome to Taitaja 2026 - your environment is ready_" -sivulta takaisin kilpailijan hallintapaneeliin. (28.1.)
+- React-vite sivupohjaan on jäänyt Tailwind, mutta sitä ei silti saa käyttää. Sen voi poistaa omasta projektistaan
 
 ### System updates, changes, and known issues
 
-- 🔄 **UPDATE**: Svelte has been added, and support for using TypeScript with Next.js has been introduced. As part of this update, the system was re-initialized. List of allowed tools also updated. (22.1.).
-- 🔄 **UPDATE**: The technical instructions have been updated, and hopefully the biggest issues have now been resolved. (27.1.)
-- 🔧 **CHANGE**: Tailwind removed from the templates where it was still included. (most likely during the night between 27.1.)
-- 🔄 **PÄIVITYS**: Syster restarted with added RAM and diskspace (28.1. at 9.14-9.24)
-- 🔧 **CHANGE**: We will fix the link on the "_Welcome to Taitaja 2026 - your environment is ready_" -page to actually point to the dashboard. (28.1.)
+- React-vite template still has Tailwind but you are still not allowed to use it. You can remove it from your project yourself.
 
 ## Semifinaali
 
-Tehtävä julkaistaan tänne semifinaalipäivän aamuna 29.1.
+Semifinaalitehtävä löytyy kolmella kielellä [Semifinaali](/Semifinaali/Webdevelopment–semifinaltask.pdf) -kansiosta.
