@@ -18,4 +18,4 @@
 
 ## Semifinaali
 
-Semifinaalitehtävä löytyy kolmella kielellä [Semifinaali](/Semifinaali/Webdevelopment–semifinaltask.pdf) -kansiosta.
+Semifinaalitehtävä löytyy kolmella kielellä [Semifinaali](/Semifinaali/) -kansiosta.
